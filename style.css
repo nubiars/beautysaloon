@@ -24,10 +24,10 @@ img {
   --header-heigth: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 270;
   /* HSL COLOR MODE */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 83% 63%);
+  --base-color-second: hsl(var(--hue) 22% 83%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -305,7 +305,7 @@ nav.show div.icon-close {
   text-align: center;
 }
 
-#home .text h1 {
+#home .text h2 {
   margin-bottom: 1rem;
 }
 
@@ -379,6 +379,7 @@ nav.show div.icon-close {
 
 #testimonials {
   background: white;
+  overflow-x: auto;
 }
 
 #testimonials .container {
@@ -393,7 +394,7 @@ nav.show div.icon-close {
 }
 
 #testimonials blockquote {
-  padding: 2rem;
+  padding: 3rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
 }
@@ -621,11 +622,16 @@ footer .social a:hover {
 
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+    transition: 0.3s;
   }
 
   .card {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .cards:hover {
+    transform: scale(1.02);
   }
 
   /* TESTIMONIALS */
@@ -643,7 +649,7 @@ footer .social a:hover {
   }
 
   #contact .text {
-    max-width: 25rem;
+    max-width: 20rem;
   }
 
   /* FOOTER */
@@ -663,6 +669,8 @@ footer .social a:hover {
   }
 }
 /* large devices: 1023 > */
+@media (min-width: 1023px) {
+}
 /* large devices: 992 > */
 @media (min-width: 992px) {
   :root {

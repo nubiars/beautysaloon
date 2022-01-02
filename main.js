@@ -79,7 +79,7 @@ function backToTop() {
   }
 }
 
-// Activate menu at current secton
+// Activate menu at current section
 
 const sections = document.querySelectorAll('main section[id]')
 
